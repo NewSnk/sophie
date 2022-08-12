@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+#header {
+  position: -webkit-sticky;
+  position: sticky;
+  font-family: "Verdana", ;
+  margin: 30px 50px;
+  font-size: 15pt;
+  color: #94959c;
+}
+
+h3 {
+  font-family: "Verdana" ;
+  position: -webkit-sticky;
+  position: sticky;
+  margin: 30px 50px;
+  font-size: 30pt;
+  color: #94959c;
+}
+
+
+#container {
+
+  position: relative;
+
+}
+
+#sections {
+  width: 25%;
+  padding-bottom: 25vh;
+}
+
+#sections>div {
+  padding: 5% 10%;
+  margin-bottom: 50vh;
+}
+
+#sections>div:last-child {
+  margin-bottom: 10px;
+}
+
+#sections>div.graph-scroll-active {
+  opacity: 0.9;
+}
+
+#graph {
+  width: 80%;
+  height: 90vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 150px;
+  margin-left: 20%;
+  float: none;
+}
+
+pre {
+  overflow: hidden;
+}
+
+.axisLabel {
+  font-family: "Verdana";
+  font-size: 12pt;
+  color: #94959c;
+}
+
+.annotation {
+  font-family: "Verdana";
+  font-weight: 500;
+  font-size: 13pt;
+}
+
+.axis {
+  font-family: "Verdana";
+  font-size: 10pt;
+  color: #94959c;
+}

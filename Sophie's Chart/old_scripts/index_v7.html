@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./style/style.css">
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="https://d3js.org/d3-array.v2.min.js"></script>
+        <!--extra js library to handle some special data wrangling for the stacked layout-->
+        <script src="./arquero.js"></script>
+    </head>
+    <body>
+        <h2> 2020 U.S. Textile Imports by Type</h2>
+        <div class="button_group">
+            <button class="tablinks active" id="raw" onclick="showVis(event)">raw</button>
+            <button class="tablinks" id="below" onclick="showVis(event)">below</button>
+            <button class="tablinks" id="pre_adjustment" onclick="showVis(event)">pre_adjustment</button>
+            <button class="tablinks" id="adjustment" onclick="showVis(event)">adjustment</button>
+            <button class="tablinks" id="deficit" onclick="showVis(event)">deficit</button>
+        </div>
+
+        <div id="container">
+        
+            <div id='graph'></div>
+            <div id = 'sections'>
+                <div id = "part_1" data-step='1'>
+                    <p> Part 1.<br><br> Part 1 Detail </p>
+                </div>
+                <div id = "part_2" data-step='2'>
+                    <p> Part 2.</p>
+                </div>
+                <div id = "part_3" data-step='3'>
+                    <p>Part 3.</p>
+                </div>
+                <div id = "part_4" data-step='4'>
+                    <p>Part 4</p>
+                </div>
+                
+        </div>
+            <div id="chart"></div>
+            <div id="legend"></div>
+        </div>
+        
+        <script src="./script_v7.js"></script>
+    </body>
+</html>

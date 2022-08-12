@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+    <link rel="stylesheet" type="text/css" href="./style/basicStyles.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3js.org/d3-array.v2.min.js"></script>
+    <script src="lib/graph-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.min.js"
+        integrity="sha512-iBAeBWWWFb8HqSBcrqcz98iIpuVH1la39dEYHtyQ/pGpeCQTQVvLJOWAuhv2Q7JSHp9k7hWA7sGxU3hHJe+tFg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--extra js library to handle some special data wrangling for the stacked layout-->
+    <script src="./arquero.js"></script>
+</head>
+
+<body>
+    <div id="header">
+    <h3> 2020 U.S. Textile Imports by Type </h3>
+    </div>
+
+    <div id="container">
+        <div id='graph'></div>
+        <div id="sections">
+            <div id="start" data-step="1">
+                To get a sense for how the textile trade in the U.S. was effected by COVID-19, we start by examining <strong><FONT COLOR="#03a1fc">cotton imports</FONT></strong>.
+                </p>
+            </div>
+            <div id="part_1" data-step="2">
+                Cotton imports in the U.S. fell below the <strong><FONT COLOR="#0c0c8a">ten year annual average</FONT></strong> during the early part of 2020. <p> 
+                </p>
+            </div>
+            <div id="part_2" data-step="3">
+               Relative to the ten-year historical average total import is <strong><FONT COLOR="#fc0318"> the shortfall represents a reduction of over 14%</FONT></strong>, centered around the early part of the year (January through July).  
+            </div>
+            <div id="part_3" data-step="4">
+                By the end of 2020, trade had recovered, and the U.S. had returned to a <strong><FONT COLOR="#63b877"> trading surplus</FONT></strong> relative to the monthly ten-year average. <p>
+
+             </div>
+            <div id="part_4" data-step="5">
+                To <strong><FONT COLOR="#a9c2af">account for seasonality in the textile trade</FONT></strong>, and to establish firmer correlation to COVID-19 related events in early 2020, we net out the <strong><FONT COLOR="#63b877"> trading surplus</FONT></strong> from the <strong><FONT COLOR="#fc0318"> shortfall</FONT></strong> heuristically. <p>  
+                </p>  
+            </div>
+            <div id="part_5" data-step="6">
+                This leaves us with a <strong><FONT COLOR="#f0136b"> surplus-adjusted monthly shortfall</FONT></strong> value that may be used to analyze differences between 2020, and the previous ten years in U.S. trade history. 
+            </div>
+            <div id="part_6" data-step="7">
+                We can see that <strong><FONT COLOR="#db256e"> the COVID restrictions timeline in early 2020</FONT></strong> correlate quite closely with the shape of trade deficits <p></p>
+                While the early part of 2020 is less clear, it becomes visually apparent that during the early stages of 2020, when states were starting to take up quarantine and determine restrictions, the cotton import trade started to suffer. <p></p>
+                By <strong><FONT COLOR="gray"> late March</FONT></strong> when most U.S. states started to easy restrictions (to some degree), trade appeared to start the return to normal, reaching to ten-year normals by July.
+            </div>
+        </div>
+
+
+    </div>
+    <script src="./script_v10.js"></script>
+    
+</body>
+
+</html>

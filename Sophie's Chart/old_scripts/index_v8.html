@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./style/style.css">
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="https://d3js.org/d3-array.v2.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.min.js" integrity="sha512-iBAeBWWWFb8HqSBcrqcz98iIpuVH1la39dEYHtyQ/pGpeCQTQVvLJOWAuhv2Q7JSHp9k7hWA7sGxU3hHJe+tFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!--extra js library to handle some special data wrangling for the stacked layout-->
+        <script src="./arquero.js"></script>
+    </head>
+    <body>
+        <h2> 2020 U.S. Textile Imports by Type</h2>
+        <div class="button_group">
+            <button class="tablinks active" id="raw" onclick="showVis(event)">1</button>
+            <button class="tablinks" id="below" onclick="showVis(event)">2</button>
+            <button class="tablinks" id="pre_adjustment" onclick="showVis(event)">3</button>
+            <button class="tablinks" id="pre_adjustment_2" onclick="showVis(event)">4</button>
+            <button class="tablinks" id="adjustment" onclick="showVis(event)">5</button>
+            <button class="tablinks" id="deficit" onclick="showVis(event)">6</button>
+        </div>
+
+        <div id="container">
+        
+            <div id='graph'></div>
+        </div>
+            <div id="chart"></div>
+            <div id="legend"></div>
+        </div>
+        
+        <script src="./script_v8.js"></script>
+    </body>
+</html>
